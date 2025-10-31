@@ -273,3 +273,143 @@ function HeroImage() {
     </div>
   );
 }
+
+function ProblemSolutionSection() {
+  return (
+    <section className="w-full bg-white text-black px-6 sm:px-10 lg:px-18 py-12 lg:py-24">
+      <div className="max-w-[1366px] mx-auto flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-8">
+        <div className="w-full lg:w-[314px] lg:pb-24">
+          <MarketSnapshotCard />
+        </div>
+
+        <div className="w-full lg:w-[804px] flex flex-col gap-8">
+          <SectionHeading />
+          <ProblemStatement />
+          <ValidationFirstImage />
+          <JourneyText />
+          <BeforeAfterImage />
+          <AIStatement />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function MarketSnapshotCard() {
+  return (
+    <div className="flex flex-col bg-white rounded-3xl shadow-[0_5px_11px_0_rgba(0,0,0,0.05),0_20px_20px_0_rgba(0,0,0,0.04),0_45px_27px_0_rgba(0,0,0,0.03),0_80px_32px_0_rgba(0,0,0,0.01),0_125px_35px_0_rgba(0,0,0,0.00)]">
+      <img
+        src="https://api.builder.io/api/v1/image/assets/TEMP/ed6bf83b11d18618b87d5103d20533e64f6e41c7?width=628"
+        alt="Market potential visualization"
+        className="w-full h-[180px] object-cover rounded-t-lg"
+      />
+      <div className="flex flex-col gap-6 p-3 pb-6">
+        <div className="flex flex-col gap-2">
+          <h3 className="text-xl font-medium leading-7 text-black">
+            Market Potential Snapshot — TAM / SAM / SOM + CAGR
+          </h3>
+          <p className="text-base leading-6 text-brand-gray">
+            Essential figures on market scale and growth.
+          </p>
+        </div>
+        <button className="w-full px-4 py-2.5 rounded-md bg-gradient-to-r from-brand-blue-start to-brand-blue-end text-white text-sm font-medium transition-all hover:shadow-lg">
+          Get Market Snapshot
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function SectionHeading() {
+  return (
+    <h2 className="text-4xl sm:text-5xl lg:text-[64px] font-medium leading-tight lg:leading-[72px] tracking-tight lg:tracking-[-3.84px] max-w-[451px]">
+      <span className="text-black">The problem and its </span>
+      <span className="bg-gradient-to-b from-brand-blue-start to-brand-blue-end bg-clip-text text-transparent">
+        solution
+      </span>
+    </h2>
+  );
+}
+
+function ProblemStatement() {
+  return (
+    <div className="relative h-auto lg:h-24">
+      <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed lg:leading-8 max-w-[779px]">
+        <span className="text-black">Most products start in slide decks. </span>
+        <EmojiIcon src="https://api.builder.io/api/v1/image/assets/TEMP/6b2a0c29d9fa8282e86d11e93c891cc1cd366073?width=64" />
+        <span className="text-black"> Most budgets disappear there too. </span>
+        <EmojiIcon src="https://api.builder.io/api/v1/image/assets/TEMP/2e58288fbb07ae40975e38004943ade9e140334e?width=64" />
+        <span className="text-black"> We've watched smart experts build for months before anyone tried to pay. </span>
+        <span className="text-brand-gray line-through">We're not okay with that.</span>
+      </p>
+    </div>
+  );
+}
+
+function EmojiIcon({ src }: { src: string }) {
+  return (
+    <img
+      src={src}
+      alt=""
+      className="inline-flex w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 mx-1 rounded-full border border-[#7693F9]"
+    />
+  );
+}
+
+function ValidationFirstImage() {
+  return (
+    <img
+      src="https://api.builder.io/api/v1/image/assets/TEMP/39c30ee400d07be4a0124a6d1f7570696105b840?width=1608"
+      alt="Development first vs Validation-first comparison infographic"
+      className="w-full h-auto rounded-2xl border border-[#FFCCC8] shadow-[0_4px_12px_12px_rgba(239,39,24,0.02)]"
+    />
+  );
+}
+
+function JourneyText() {
+  return (
+    <div className="relative">
+      <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed lg:leading-8">
+        <span className="text-black">For almost four years we shipped builds for early founders. The lesson was blunt: </span>
+        <span className="text-primary font-normal">don't code before value</span>
+        <span className="text-black">. So we moved from a dev shop to a zero-to-market studio. </span>
+        <EmojiIcon src="https://api.builder.io/api/v1/image/assets/TEMP/ae26aadfc45ead1f1132ac6079d0c2483f833cc7?width=64" />
+        <span className="text-black"> Same skills research, design, development but now we insist on validation.</span>
+        <span className="inline-flex ml-2">
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/cdd7b8428ee76fffd3b38e60f228135b996e1913?width=224"
+            alt="badges"
+            className="h-6 sm:h-7 lg:h-8 w-auto"
+          />
+        </span>
+      </p>
+    </div>
+  );
+}
+
+function BeforeAfterImage() {
+  return (
+    <img
+      src="https://api.builder.io/api/v1/image/assets/TEMP/b8a493ee462eb9c5c811b60bee6b07706db1a55c?width=1608"
+      alt="Before - Dev shop vs After - Zero-to-market comparison"
+      className="w-full h-auto rounded-2xl"
+    />
+  );
+}
+
+function AIStatement() {
+  return (
+    <div className="relative">
+      <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed lg:leading-8">
+        <span className="text-black">We use </span>
+        <span className="text-primary font-normal">AI only</span>
+        <span className="text-black"> where it actually speeds things up. </span>
+        <EmojiIcon src="https://api.builder.io/api/v1/image/assets/TEMP/36d6144a1ed731ed9c7be421de26748e68015a42?width=64" />
+        <span className="text-black"> The same operator mindset powers our own product, </span>
+        <a href="#" className="text-primary underline font-normal">
+          PlanEat AI
+        </a>
+      </p>
+    </div>
+  );
+}
