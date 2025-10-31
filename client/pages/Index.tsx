@@ -5,6 +5,7 @@ export default function Index() {
     <div className="min-h-screen bg-black text-white">
       <Header />
       <HeroSection />
+      <ProblemSolutionSection />
     </div>
   );
 }
