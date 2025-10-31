@@ -339,8 +339,14 @@ function ProblemStatement() {
         <EmojiIcon src="https://api.builder.io/api/v1/image/assets/TEMP/6b2a0c29d9fa8282e86d11e93c891cc1cd366073?width=64" />
         <span className="text-black"> Most budgets disappear there too. </span>
         <EmojiIcon src="https://api.builder.io/api/v1/image/assets/TEMP/2e58288fbb07ae40975e38004943ade9e140334e?width=64" />
-        <span className="text-black"> We've watched smart experts build for months before anyone tried to pay. </span>
-        <span className="text-brand-gray line-through">We're not okay with that.</span>
+        <span className="text-black">
+          {" "}
+          We've watched smart experts build for months before anyone tried to
+          pay.{" "}
+        </span>
+        <span className="text-brand-gray line-through">
+          We're not okay with that.
+        </span>
       </p>
     </div>
   );
@@ -370,11 +376,22 @@ function JourneyText() {
   return (
     <div className="relative">
       <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed lg:leading-8">
-        <span className="text-black">For almost four years we shipped builds for early founders. The lesson was blunt: </span>
-        <span className="text-primary font-normal">don't code before value</span>
-        <span className="text-black">. So we moved from a dev shop to a zero-to-market studio. </span>
+        <span className="text-black">
+          For almost four years we shipped builds for early founders. The lesson
+          was blunt:{" "}
+        </span>
+        <span className="text-primary font-normal">
+          don't code before value
+        </span>
+        <span className="text-black">
+          . So we moved from a dev shop to a zero-to-market studio.{" "}
+        </span>
         <EmojiIcon src="https://api.builder.io/api/v1/image/assets/TEMP/ae26aadfc45ead1f1132ac6079d0c2483f833cc7?width=64" />
-        <span className="text-black"> Same skills research, design, development but now we insist on validation.</span>
+        <span className="text-black">
+          {" "}
+          Same skills research, design, development but now we insist on
+          validation.
+        </span>
         <span className="inline-flex ml-2">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/cdd7b8428ee76fffd3b38e60f228135b996e1913?width=224"
@@ -403,9 +420,15 @@ function AIStatement() {
       <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed lg:leading-8">
         <span className="text-black">We use </span>
         <span className="text-primary font-normal">AI only</span>
-        <span className="text-black"> where it actually speeds things up. </span>
+        <span className="text-black">
+          {" "}
+          where it actually speeds things up.{" "}
+        </span>
         <EmojiIcon src="https://api.builder.io/api/v1/image/assets/TEMP/36d6144a1ed731ed9c7be421de26748e68015a42?width=64" />
-        <span className="text-black"> The same operator mindset powers our own product, </span>
+        <span className="text-black">
+          {" "}
+          The same operator mindset powers our own product,{" "}
+        </span>
         <a href="#" className="text-primary underline font-normal">
           PlanEat AI
         </a>
